@@ -1,11 +1,14 @@
 # cypress-cucumber-typescript-example
-Example of using Cypress with Cucumber and TypeScript + Xpath + reports(html, json)
+Example of using Cypress with Cucumber and TypeScript + Xpath + reports (html, json)
 
 install :
 npm install
 
 command :
 npm test
+
+Open cypress :
+npx cypress open
 
 All the configuration is in [cypress/plugins/index.js](cypress/plugins/index.js)
 
