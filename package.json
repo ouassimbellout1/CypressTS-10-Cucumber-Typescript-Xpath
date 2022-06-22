@@ -15,7 +15,8 @@
   "author": "Ouassim Bellout",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^10.1.0",
+    "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress": "^10.2.0",
     "cypress-cucumber-preprocessor": "^4.3.0",
     "cypress-xpath": "^1.6.2",
     "multiple-cucumber-html-reporter": "^1.21.4",

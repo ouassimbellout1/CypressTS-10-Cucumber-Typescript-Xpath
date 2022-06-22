@@ -1,6 +1,12 @@
 {
     "compilerOptions": {
+      "strict": true,
+      "module": "commonjs",
+      "target": "es6",
+      "lib": ["es6", "dom"],
       "types": ["cypress", "node", "cypress-xpath"],
+      "esModuleInterop": true,
+      "typeRoots": ["node_modules/@types"],
       "baseUrl": "./"
     },
     "include": [
