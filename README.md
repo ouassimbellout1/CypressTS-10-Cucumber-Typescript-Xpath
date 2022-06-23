@@ -1,9 +1,9 @@
 # cypress 10 : cucumber - typescript - xpath - reports --- example
 Example of using Cypress with Cucumber and TypeScript + Xpath + Reports (html, json)
 
-> **install :** `npm install`
+> **Install :** `npm install`
 
-> **command :** `npm test`
+> **Test command :** `npm test`
 
 > **Open cypress :** `npx cypress open`
 
