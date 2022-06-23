@@ -3,7 +3,7 @@ Example of using Cypress with Cucumber and TypeScript + Xpath + Reports (html, j
 
 > **install :** `*npm install*`
 
-> **command :** *npm test*
+> **command :** *`npm test`*
 
 > **Open cypress :** *npx cypress open*
 
