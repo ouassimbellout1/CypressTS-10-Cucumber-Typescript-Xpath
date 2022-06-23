@@ -14,4 +14,6 @@ TypeScript step definitions are in [cypress/e2e/passWithTypescript](cypress/e2e/
 ```mermaid
 Note : (I'm using the **nonGlobalStepDefinitions** configuration in the [package.json](package.json) : *line 26*)
 
+
+
 You can also use our Cucumber plugin with TypeScript and webpack: [https://github.com/TheBrainFamily/cypress-cucumber-webpack-typescript-example/](https://github.com/TheBrainFamily/cypress-cucumber-webpack-typescript-example/)
