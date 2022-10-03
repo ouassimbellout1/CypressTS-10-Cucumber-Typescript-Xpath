@@ -11,7 +11,6 @@ export default defineConfig({
     excludeSpecPattern: '**/pages/*,**/common/*',
     supportFile: "cypress/support/e2e.ts",
     fixturesFolder: "cypress/fixtures",
-    baseUrl: './',
     experimentalSessionAndOrigin: false,
     video: false,
     videoCompression : false,
