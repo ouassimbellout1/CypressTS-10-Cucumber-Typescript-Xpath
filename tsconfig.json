@@ -7,9 +7,9 @@
       "types": ["cypress", "node", "cypress-xpath"],
       "esModuleInterop": true,
       "typeRoots": ["node_modules/@types"],
-      "baseUrl": "./"
+      "noImplicitAny": false
     },
     "include": [
-      "cucumber-html-report.js"
+      "cucumber-html-report.ts", "**/*.json", "cypress/support/e2e.ts", "cypress/plugins/index.ts"
     ]
 }

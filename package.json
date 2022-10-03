@@ -7,7 +7,7 @@
     "clean:reports": "if exist cypress\\reports rmdir /S/Q cypress\\reports",
     "pretest": "npm run clean:reports",
     "scripts": "cypress run --browser chrome --config video=false",
-    "posttest": "node ./cypress/cucumber-html-report.js",
+    "posttest": "node ./cypress/cucumber-html-report.ts",
     "test": "npm run scripts || npm run posttest",
     "cyrun": "npx cypress run",
     "cyopen": "npx cypress open"
@@ -16,6 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/cypress-cucumber-preprocessor": "^4.0.1",
+    "@types/node": "^18.7.23",
     "cypress": "^10.2.0",
     "cypress-cucumber-preprocessor": "^4.3.0",
     "cypress-xpath": "^1.6.2",
