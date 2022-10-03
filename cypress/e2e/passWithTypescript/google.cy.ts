@@ -10,6 +10,5 @@ Given('I pass', () => {
 
   pass("hello world");
   console.log(localFunctionWithTypes(1,2) === 2)
-  cy.visit('https://www.google.com/')
-  cy.xpath("//input[@class='gLFyf gsfi']").type('cypress 10{enter}', { delay : 120 })
+  cy.googleSearch()
 });

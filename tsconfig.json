@@ -1,16 +1,14 @@
 {
-    "compilerOptions": {
-      "strict": true,
-      "module": "commonjs",
-      "target": "es6",
-      "lib": ["es6", "dom"],
-      "types": ["cypress", "node", "cypress-xpath"],
-      "esModuleInterop": true,
-      "typeRoots": ["node_modules/@types"],
-      "baseUrl": "./",
-      "noImplicitAny": false
-    },
-    "include": [
-      "cucumber-html-report.ts", "**/*.json", "cypress/support/e2e.ts", "cypress/plugins/index.ts"
-    ]
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "lib": ["es6", "dom"],
+    "types": ["cypress", "node", "cypress-xpath"],
+    "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types"],
+    "baseUrl": "./",
+    "strict": true,
+    "noImplicitAny": false
+  },
+  "include": ["**/*.ts", "**/*.json", "cypress/support/e2e.ts", "cypress/plugins/index.ts"]
 }
