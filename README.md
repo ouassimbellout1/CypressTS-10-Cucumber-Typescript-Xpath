@@ -1,13 +1,13 @@
 # Cypress 10 : *Cucumber - Typescript - Xpath - Reports --- Example*
 - Example of using Cypress with Cucumber and TypeScript + Xpath + Reports (html, json)
 
-> **Install :** `npm install`
+> **Install :** `npm install --save-dev`
 
 > **Test command :** `npm test`
 
 > **Open cypress :** `npx cypress open`
 
-All the configuration is in [cypress/plugins/index.js](cypress/plugins/index.js)
+All the configuration is in [cypress/plugins/index.ts](cypress/plugins/index.ts)
 
 TypeScript step definitions are in [cypress/e2e/passWithTypescript](cypress/e2e/passWithTypescript)
 
