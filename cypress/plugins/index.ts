@@ -5,14 +5,9 @@
 const cucumber = require("cypress-cucumber-preprocessor").default;
 const browserify = require("@cypress/browserify-preprocessor");
 const resolve = require('resolve');
-
-const { initPlugin } = require("cypress-plugin-snapshots/plugin");
 const xlsx = require('xlsx');
-//const fs = require('fs');  // for file
-//const path = require('path');  // for file path
 
-module.exports = (on, config) => {
-  initPlugin(on, config);
+module.exports = (on: any) => {
   const options = {
     ...browserify.defaultOptions,
     typescript: require.resolve("typescript"),
@@ -24,7 +19,6 @@ module.exports = (on, config) => {
   on("task", {
     generateJSONFromExcel: generateJSONFromExcel,
   });
-  return config;
 };
 
 // Excel To JSON
