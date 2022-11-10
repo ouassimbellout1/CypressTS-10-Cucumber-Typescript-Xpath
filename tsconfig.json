@@ -10,5 +10,5 @@
     "strict": true,
     "noImplicitAny": false
   },
-  "include": ["**/*.ts", "**/*.json", "cypress/support/e2e.ts", "cypress/plugins/index.ts"]
+  "include": ["**/*.ts", "**/*.json", "cypress/support/e2e.ts", "cypress/plugins/index.ts", "cypress/plugins/read-xlsx.ts"]
 }

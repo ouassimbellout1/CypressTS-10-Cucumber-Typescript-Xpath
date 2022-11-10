@@ -13,6 +13,7 @@
 // https://on.cypress.io/configuration
 // ***********************************************************
 import './commands'
+import "cypress-plugin-snapshots/commands";
 // Import commands.js using ES2015 syntax:
 require('cypress-xpath')
 // Alternatively you can use CommonJS syntax:
@@ -20,7 +21,7 @@ require('cypress-xpath')
 declare global {
     namespace Cypress {
         interface Chainable <Subject = any> {
-            googleSearch(): void;
+            googleSearch(search): void;
         }
     }
 }
