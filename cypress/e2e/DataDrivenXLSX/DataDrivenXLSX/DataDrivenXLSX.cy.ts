@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import dataDriven from "../../../support/pages/DataDrivenXLSX/page-DataDrivenXLSX";
+import dataDriven from "../../../support/pages/DataDrivenXLSX/page-DataDrivenXLSX.cy";
 
 Given("J'accede a l'url", () => {
     dataDriven.navigate();

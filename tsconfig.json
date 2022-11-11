@@ -1,14 +1,23 @@
 {
-  "compilerOptions": {
-    "module": "commonjs",
-    "target": "es6",
-    "lib": ["es6", "dom"],
-    "types": ["cypress", "node", "cypress-xpath"],
-    "esModuleInterop": true,
-    "typeRoots": ["node_modules/@types"],
-    "baseUrl": "./",
-    "strict": true,
-    "noImplicitAny": false
+
+  "compilerOptions"    : {
+    "strict"           : true,
+    "noImplicitAny"    : false,
+    "esModuleInterop"  : true,
+    "module"           : "ES2022",
+    "moduleResolution" : "node",
+    "target"           : "es6",
+    "lib"              : ["es6", "dom"],
+    "types"            : ["cypress", "node", "cypress-xpath"],
+    "typeRoots"        : ["node_modules/@types"],
+    "baseUrl"          : "./"
   },
-  "include": ["**/*.ts", "**/*.json", "cypress/support/e2e.ts", "cypress/plugins/index.ts", "cypress/plugins/read-xlsx.ts"]
+
+  "include"            : [
+    "**/*.ts", "**/*.json",
+    "cypress/support/e2e.ts",
+    "cypress/plugins/index.ts", 
+    "cypress/plugins/read-xlsx.ts"
+  ]
+
 }

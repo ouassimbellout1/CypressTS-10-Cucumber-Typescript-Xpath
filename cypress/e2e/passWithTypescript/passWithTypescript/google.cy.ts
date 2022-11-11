@@ -10,6 +10,6 @@ import { localFunctionWithTypes } from "../../../support/pages/passWithTypescrip
 Given('I pass', () => {
 
   pass("hello world");
-  console.log(localFunctionWithTypes(1,2) === 2)
-  cy.googleSearch('cypress 10')
+  console.log(localFunctionWithTypes(1,2) === 2);
+  cy.googleSearch('cypress 10');
 });

@@ -3,9 +3,8 @@
  */
 
 const cucumber = require("cypress-cucumber-preprocessor").default;
-const browserify = require("@cypress/browserify-preprocessor");
-const resolve = require('resolve');
-const xlsx = require('xlsx');
+import browserify from "@cypress/browserify-preprocessor";
+import xlsx from 'xlsx';
 
 module.exports = (on: any) => {
   const options = {
