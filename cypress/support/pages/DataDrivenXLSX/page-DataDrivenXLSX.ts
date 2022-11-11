@@ -1,10 +1,11 @@
 /// <reference types="cypress" />
+/// <reference types="cy-verify-downloads" />
 
 const variable = {
-    url : "https://react-redux.realworld.io/#/login?_k=g43dop",
-    excelFileName : "login.xlsx",
-    sheetName : "login",
-    jsonFileName : "login.json",
+    url           : `https://react-redux.realworld.io/#/login?_k=g43dop`,
+    excelFileName : `login`,
+    sheetName     : `login`,
+    jsonFileName  : `login`,
 }
 
 class DataDriven {
@@ -14,21 +15,21 @@ class DataDriven {
     }
     
     excelFileValidate() {
-        cy.readFile(`cypress/fixtures/xlsx/${variable.excelFileName}`).should('exist')
+        cy.readFile(`cypress/fixtures/xlsx/${variable.excelFileName}.xlsx`);
     }
 
     taskExcel() {
-        const excelFilePath = `cypress/fixtures/xlsx/${variable.excelFileName}`;
+        const excelFilePath = `cypress/fixtures/xlsx/${variable.excelFileName}.xlsx`;
         const sheetName = variable.sheetName;
         return cy.task("generateJSONFromExcel", { excelFilePath, sheetName })
     }
 
-    excelToJson(user) {
-        return cy.writeFile(`cypress/fixtures/Json/${variable.jsonFileName}`, {user});
+    excelToJson(user: any) {
+        return cy.writeFile(`cypress/fixtures/Json/${variable.jsonFileName}.json`, {user});
     }
 
     fixture() {
-        return cy.fixture(`Json/${variable.jsonFileName}`)
+        return cy.fixture(`Json/${variable.jsonFileName}.json`)
     }
 }
 

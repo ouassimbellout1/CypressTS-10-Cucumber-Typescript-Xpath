@@ -3,8 +3,6 @@
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import dataDriven from "../../../support/pages/DataDrivenXLSX/page-DataDrivenXLSX";
 
-//let rowsLength;
-
 Given("J'accede a l'url", () => {
     dataDriven.navigate();
   });
@@ -22,9 +20,9 @@ Then('Utiliser XLSX pour se connecter', () => {
                 cy.get('[type="password"]').clear().type(user[i].password);
                 cy.get('.btn').click();
                 cy.get('.error-messages > li').then(function(e){
-                    const t = e.text()
-                    expect(t).to.contains('email or password is invalid')
-                 })
+                    const t = e.text();
+                    expect(t).to.contains('email or password is invalid');
+                })
             }
         }
     )   
@@ -41,9 +39,9 @@ Then('Utiliser Json pour se connecter', () => {
                     cy.get('[type="password"]').clear().type(data.user[i].password);
                     cy.get('.btn').click();
                     cy.get('.error-messages > li').then(function(e){
-                        const t = e.text()
-                        expect(t).to.contains('email or password is invalid')
-                     })
+                        const t = e.text();
+                        expect(t).to.contains('email or password is invalid');
+                    })
                 }
             })
         }

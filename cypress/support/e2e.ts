@@ -20,7 +20,7 @@ require('cypress-xpath')
 declare global {
     namespace Cypress {
         interface Chainable <Subject = any> {
-            googleSearch(search): void;
+            googleSearch(search: string): void;
         }
     }
 }
