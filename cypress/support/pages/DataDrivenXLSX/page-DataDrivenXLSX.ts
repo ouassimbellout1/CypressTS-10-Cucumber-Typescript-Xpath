@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-/// <reference types="cy-verify-downloads" />
 
 const variable = {
     url           : `https://react-redux.realworld.io/#/login?_k=g43dop`,
