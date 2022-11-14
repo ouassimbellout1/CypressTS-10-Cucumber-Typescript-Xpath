@@ -17,7 +17,7 @@
   "devDependencies": {
     "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "@types/node": "^18.7.23",
-    "cypress": "^10.11.0",
+    "cypress": "^11.0.1",
     "cypress-cucumber-preprocessor": "^4.3.0",
     "cypress-xpath": "^1.6.2",
     "multiple-cucumber-html-reporter": "^1.21.4",
