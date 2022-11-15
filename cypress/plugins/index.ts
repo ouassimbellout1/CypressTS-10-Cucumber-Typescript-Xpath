@@ -11,10 +11,9 @@ module.exports = (on: any) => {
     ...browserify.defaultOptions,
     typescript: require.resolve("typescript"),
   };
-  on("file:preprocessor", cucumber(options));
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
-  
+  on("file:preprocessor", cucumber(options));
   on("task", {
     generateJSONFromExcel: generateJSONFromExcel,
   });
@@ -22,7 +21,8 @@ module.exports = (on: any) => {
 
 // Excel To JSON
 function generateJSONFromExcel(agrs) {
-  const wb = xlsx.readFile(agrs.excelFilePath, { dateNF: "mm/dd/yyyy" });
-  const ws = wb.Sheets[agrs.sheetName];
-  return xlsx.utils.sheet_to_json(ws, { raw: false });
+  const wb   = xlsx.readFile(agrs.excelFilePath, { dateNF: "mm/dd/yyyy" });
+  const ws   = wb.Sheets[agrs.sheetName];
+  const read = xlsx.utils.sheet_to_json(ws, { raw: false });
+  return read;
 }

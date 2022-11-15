@@ -15,7 +15,6 @@ Then(`Utiliser XLSX pour se connecter`, () => {
     dataDriven.taskExcel(`login`, `invalid-users`).then(
         (user: any) => {
             let rowsLength = user.length;
-            cy.log(rowsLength)
             for (let i = 0;  i < rowsLength; i++) {
                 cy.get(`[type="email"]`).clear().type(user[i].email);
                 cy.get(`[type="password"]`).clear().type(user[i].password);
