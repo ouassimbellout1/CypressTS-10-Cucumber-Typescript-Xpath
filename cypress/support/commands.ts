@@ -23,8 +23,9 @@
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
-Cypress.Commands.add('googleSearch', (search) => {
-    cy.visit('https://www.google.com/')
-    cy.xpath("//input[@class='gLFyf gsfi']").type(`${search}{enter}`, { delay : 120 })
-    cy.get('.MUFPAc a').eq(0).click()
+Cypress.Commands.add(`googleSearch`, (search) => {
+    cy.xpath(`//input[@type='text']`)
+        .should(`be.visible`)
+        .type(`${search}{enter}`, { delay : 120 });
+    cy.xpath(`//a[contains(.,'Vidéos')]`).click();
 })

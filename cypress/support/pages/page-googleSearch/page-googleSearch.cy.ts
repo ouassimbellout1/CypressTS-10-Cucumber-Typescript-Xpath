@@ -1,4 +1,4 @@
-export const pass = (somethingToSay: String): void => {
+export const say = (somethingToSay: String): void => {
     console.log("HELLO", somethingToSay)
 }
 

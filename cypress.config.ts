@@ -11,6 +11,7 @@ export default defineConfig({
     excludeSpecPattern: '**/pages/*,**/common/*',
     supportFile: "cypress/support/e2e.ts",
     fixturesFolder: "cypress/fixtures",
+    defaultCommandTimeout: 250000,
     experimentalSessionAndOrigin: false,
     video: false,
     videoCompression : false,
