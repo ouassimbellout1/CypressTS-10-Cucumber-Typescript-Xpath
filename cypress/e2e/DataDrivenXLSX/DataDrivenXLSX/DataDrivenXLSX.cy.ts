@@ -49,3 +49,10 @@ Then(`Utiliser Json pour se connecter`, () => {
     )
     cy.get('.navbar-brand').click();  
 });
+
+Then(`Utiliser data table pour se connecter`, (data) => {
+    data.hashes().forEach(element => {
+        dataDriven.logimByEmail(element.email, element.password)
+    })
+    cy.get('.navbar-brand').click();
+});
